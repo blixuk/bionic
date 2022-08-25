@@ -13,10 +13,6 @@ class Bionic:
 		with open(path, 'r') as file:
 			self.data = file.readlines()
 	
-	def save(self, path: str) -> None:
-		with open(path, 'w') as f:
-			f.write(self.data)
-	
 	def print(self, data:str=None) -> None:
 		data = data if data else self.data
 		for line in data:
